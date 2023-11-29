@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <title>Reserva</title>
+    <link rel="stylesheet" href="stylemn.css">
+</head>
+<body>
+    <header>
+        <nav class="nvt">
+            <nav class="menu-lateral">
+                    <li class="nav-item">
+                        <a href="pizzariatext2.html">
+                            <span><i id="burguer" id="Expanção" class="bi bi-list"></i></span>
+                        </a>
+                    </li>
+                <br><br>
+                <ul>
+                    <li class="item-menu">
+                        <a href="cardapio.html">
+                            <span class="iconi"><img class="pizimg" src="local_pizza_FILL0_wght400_GRAD0_opsz24.png"></span>
+                            <span class="txts-link">Cardápio</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="dashboard.html">
+                            <span class="icon"><i class="bi bi-columns-gap"></i></span>
+                            <span class="txts-link">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="disponibilidade.html">
+                            <span class="icon"><i class="bi bi-calendar3"></i></span>
+                            <span class="txts-link">Disponibilidade</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+                <div class="logo">
+                                <ul>
+                                    <h1><b>P</b>izzaria <b>B</b>om <b>A</b>petite</h1><!-- Ícone da logo -->
+                                            
+                                                <li>
+                                                    <div>
+                                                        <a href="pizzariatext.html" class="buttonin"><h3>Home</h3></a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>        
+                                                        <a class="buttonin" href="contact.html"><h3>Contact</h3></a>
+                                                    </div>
+                                                </li>
+                                                        <li>
+                                                            <div class="search-box">
+                                                                <input type="text" class="search-text" placeholder="Pesquisar...">    
+                                                                <a class="buttonin" data-target="search" id="search-btn">
+                                                                    <span class="icon" id="s1"><h3><i class="bx bx-search"></i></h3></span>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                            
+
+
+                                </ul>
+                            </div>
+
+                    </div>
+                    
+            
+            </div>
+        </nav>
+</nav>
+</header>
+<br><br><br><br>
+
+<div class="wrapper">
+    <h2>Prencha suas informações<input class="ret" type="button" value="X" onclick="voltarPagina()"></h2>
+    <form action="" method="post">
+        <!--Account Information Start-->
+        <h4>Conta</h4>
+        <div class="input_group">
+            <div class="input_box">
+                <input type="text" placeholder="Nome" required class="name">
+                <i class="fa fa-user icon"></i>
+            </div>
+            <div class="input_box">
+                <input type="text" placeholder="Sobrenome" required class="name">
+                <i class="fa fa-user icon"></i>
+            </div>
+        </div>
+        <div class="input_group">
+            <div class="input_box">
+                <input type="email" placeholder="Endereço de Email" required class="name">
+                <i class="fa fa-envelope icon"></i>
+            </div>
+        </div>
+        <div class="input_group">
+            <div class="input_box">
+                <input type="text" placeholder="Endereço" required class="name">
+                <i class="fa fa-map-marker icon" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="input_group">
+            <div class="input_box">
+                <input type="text" placeholder="Número de pessoas" required class="name">
+                <i class="bi bi-people-fill icon"></i>
+            </div>
+        </div>
+        <div class="input_group">
+            <div class="input_box">
+                <input type="text" placeholder="Preferências de Assentos" required class="name">
+                <i class="fa fa-wheelchair icon"></i>
+            </div>
+        </div>
+        <!--Account Information End-->
+
+
+        <!--DOB & Gender Start-->
+        <div class="input_group">
+            <div class="input_box">
+                <h4>Data da Reserva</h4>
+                <input type="text" placeholder="DD" required class="dob">
+                <input type="text" placeholder="MM" required class="dob">
+                <input type="text" placeholder="YYYY" required class="dob">
+            </div>
+            <div class="input_box">
+                <h4>Horário</h4>
+                <input type="text" placeholder="Hora" required class="dob">
+                <input type="text" placeholder="Minutos" required class="dob">
+            </div>
+        </div>
+        <!--DOB & Gender End-->
+
+
+        <!--Payment Details Start-->
+        <div class="input_group">
+            <div class="input_box">
+                <h4>Detalhes do pagamento</h4>
+                <input type="radio" name="pay" class="radio" id="bc1" checked>
+                <label for="bc1"><span>
+                        <i class="fa fa-cc-visa"></i>Credit Card</span></label>
+                <input type="radio" name="pay" class="radio" id="bc2">
+                <label for="bc2"><span>
+                        <i class="fa fa-cc-paypal"></i>Paypal</span></label>
+            </div>
+        </div>
+        <div class="input_group">
+            <div class="input_box">
+                <input type="tel" name="" class="name" placeholder="Numero do cartão 1111-2222-3333-4444" required>
+                <i class="fa fa-credit-card icon"></i>
+            </div>
+        </div>
+        <div class="input_box">
+            <input type="number" placeholder="Insira o valor" required class="name">
+            <i class="fa fa-money icon" aria-hidden="true"></i>
+        </div>
+        <!--Payment Details End-->
+
+        <div class="input_group">
+            <div class="input_box">
+                <a href="cardapio.html">
+                <button type="submit">ENVIAR AGORA</button>
+                </a>
+            </div>
+        </div>
+
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
